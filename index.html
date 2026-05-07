@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FRL — Foil Racing League</title>
+<meta name="description" content="Eight lakes. One season. Every foil. The first US racing league for powered and non-powered foils.">
+<meta property="og:title" content="FRL — Foil Racing League">
+<meta property="og:description" content="Eight lakes. One season. Every foil.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+  @font-face {
+    font-family: 'Bebas Neue';
+    src: url('assets/fonts/bebas-neue-latin-400-normal.woff2') format('woff2');
+    font-weight: 400; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Manrope';
+    src: url('assets/fonts/manrope-latin-400-normal.woff2') format('woff2');
+    font-weight: 400; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Manrope';
+    src: url('assets/fonts/manrope-latin-500-normal.woff2') format('woff2');
+    font-weight: 500; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Manrope';
+    src: url('assets/fonts/manrope-latin-600-normal.woff2') format('woff2');
+    font-weight: 600; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Manrope';
+    src: url('assets/fonts/manrope-latin-700-normal.woff2') format('woff2');
+    font-weight: 700; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Manrope';
+    src: url('assets/fonts/manrope-latin-800-normal.woff2') format('woff2');
+    font-weight: 800; font-style: normal; font-display: swap;
+  }
+</style>
+
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="assets/frl-logo.png">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top">
+    <img src="assets/frl-logo.png" alt="FRL" class="nav__logo">
+    <span class="nav__name">FOIL RACING LEAGUE</span>
+  </a>
+  <nav class="nav__links">
+    <a href="#opportunity">Opportunity</a>
+    <a href="#audience">Audience</a>
+    <a href="#format">Format</a>
+    <a href="#tour">Tour</a>
+    <a href="#build">Build</a>
+  </nav>
+  <a class="nav__cta" href="#contact">Get in touch</a>
+  <button class="nav__menu-btn" id="menuBtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__stripes" aria-hidden="true">
+    <div class="stripe stripe--navy"></div>
+    <div class="stripe stripe--white"></div>
+    <div class="stripe stripe--red"></div>
+  </div>
+
+  <div class="hero__inner">
+    <div class="hero__badge-wrap">
+      <img src="assets/frl-logo.png" alt="Foil Racing League shield" class="hero__badge">
+    </div>
+    <div class="hero__copy">
+      <div class="kicker">EST. 2027 &nbsp;·&nbsp; UNITED STATES</div>
+      <h1 class="hero__title">
+        FOIL<br>RACING<br>LEAGUE
+      </h1>
+      <p class="hero__tagline">Eight lakes. One season. Every foil.</p>
+      <div class="hero__cta-row">
+        <a class="btn btn--primary" href="#opportunity">See the case</a>
+        <a class="btn btn--ghost" href="#contact">Become a partner</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true">
+    <span>SCROLL</span>
+    <div class="scroll-cue__line"></div>
+  </div>
+</section>
+
+<!-- ============ OPPORTUNITY ============ -->
+<section class="section section--light" id="opportunity">
+  <div class="section__container">
+    <div class="section__head">
+      <div class="section__num">01</div>
+      <div class="section__label">THE OPPORTUNITY</div>
+    </div>
+    <h2 class="section__title">
+      A $660M global market.<br>
+      <span class="accent">No league at scale.</span>
+    </h2>
+    <p class="section__lede">
+      Riders are spending. Brands are racing to launch product. The competitive infrastructure hasn't caught up.
+    </p>
+
+    <div class="stats">
+      <article class="stat reveal">
+        <div class="stat__num" data-count="660" data-suffix="M+" data-prefix="$">$660M+</div>
+        <div class="stat__caption">
+          Global annual spend on foil hardware. North America alone is roughly <strong>$240M</strong>, growing <strong>10%+ a year</strong>.
+        </div>
+      </article>
+      <article class="stat reveal">
+        <div class="stat__num" data-count="5" data-suffix="K+" data-prefix="$">$5K+</div>
+        <div class="stat__caption">
+          Average per-rider hardware investment. eFoils run $7–15K; foil surf setups $2–5K. <strong>Premium, repeat buyers.</strong>
+        </div>
+      </article>
+      <article class="stat reveal">
+        <div class="stat__num" data-count="0">0</div>
+        <div class="stat__caption">
+          US leagues today that combine <strong>powered and non-powered</strong> foils across multi-stop seasons. FRL is first.
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AUDIENCE ============ -->
+<section class="section section--dark" id="audience">
+  <div class="section__container">
+    <div class="section__head">
+      <div class="section__num">02</div>
+      <div class="section__label">THE AUDIENCE</div>
+    </div>
+    <h2 class="section__title">
+      Built where the audience<br>
+      <span class="accent accent--red">already is.</span>
+    </h2>
+    <p class="section__lede">
+      Our 8 lakes aren't remote. They sit inside major metro catchments, near affluent populations, on water that's already crowded with watersport spending.
+    </p>
+
+    <div class="stats stats--dark">
+      <article class="stat reveal">
+        <div class="stat__num" data-count="50" data-suffix="M+">50M+</div>
+        <div class="stat__caption">
+          Americans within <strong>90 minutes</strong> of an FRL host lake. Eight stops, eight major metros.
+        </div>
+      </article>
+      <article class="stat reveal">
+        <div class="stat__num" data-count="30" data-suffix="M+">30M+</div>
+        <div class="stat__caption">
+          Annual recreational visits across our 8 host lakes combined. <strong>Tahoe alone: 15M. Lanier: 8M+.</strong>
+        </div>
+      </article>
+      <article class="stat reveal">
+        <div class="stat__num" data-count="110" data-suffix="K" data-prefix="$">$110K</div>
+        <div class="stat__caption">
+          Avg household income in primary FRL host counties — Travis, Forsyth, Placer, Walworth, El Dorado. <strong>National median: ~$80K.</strong>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FORMAT ============ -->
+<section class="section section--light" id="format">
+  <div class="section__container">
+    <div class="section__head">
+      <div class="section__num">03</div>
+      <div class="section__label">THE FORMAT</div>
+    </div>
+    <h2 class="section__title">
+      Two categories,<br>
+      four disciplines, <span class="accent">one lake.</span>
+    </h2>
+
+    <div class="format-grid">
+      <article class="format-card format-card--navy reveal">
+        <div class="format-card__top">
+          <div class="format-card__head">NON-POWERED</div>
+          <div class="format-card__sub">Pump foil</div>
+        </div>
+        <ul class="format-card__list">
+          <li><strong>1v1 Sprint Bracket</strong> — head-to-head, 200–400m closed course</li>
+          <li><strong>Lap Race</strong> — multi-lap endurance on a buoy course</li>
+          <li><strong>Freestyle / Best Trick</strong> — judged expression session</li>
+          <li><strong>Foil Assist Division</strong> — battery-assisted pump for newer riders</li>
+        </ul>
+      </article>
+
+      <article class="format-card format-card--red reveal">
+        <div class="format-card__top">
+          <div class="format-card__head">POWERED</div>
+          <div class="format-card__sub">eFoil</div>
+        </div>
+        <ul class="format-card__list">
+          <li><strong>1v1 Sprint Bracket</strong> — short course, head-to-head finals</li>
+          <li><strong>Time Trial</strong> — GPS-timed solo runs against the clock</li>
+          <li><strong>Freestyle / Best Trick</strong> — judged expression session</li>
+          <li><strong>Brand Cup Classes</strong> — Lift Cup, Flite Cup, optional</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WEEKEND DESIGN ============ -->
+<section class="section section--light section--no-top" id="weekend">
+  <div class="section__container">
+    <div class="section__head">
+      <div class="section__num">04</div>
+      <div class="section__label">THE WEEKEND DESIGN</div>
+    </div>
+    <h2 class="section__title">
+      Everyone races. <span class="accent">All weekend.</span>
+    </h2>
+
+    <div class="mechanisms">
+      <div class="mech reveal">
+        <div class="mech__num">01</div>
+        <div class="mech__body">
+          <h3 class="mech__title">Pool play → brackets</h3>
+          <p>Saturday: round-robin in pools of 4–6. Sunday: top finishers seed into main brackets, everyone else drops into a consolation bracket. Every entry guarantees water time both days.</p>
+        </div>
+      </div>
+      <div class="mech reveal">
+        <div class="mech__num">02</div>
+        <div class="mech__body">
+          <h3 class="mech__title">Multi-discipline scoring</h3>
+          <p>One entry covers all your division's events — sprint, lap race, freestyle. A bad sprint Saturday doesn't end your weekend; you can still chase points across other disciplines and the season.</p>
+        </div>
+      </div>
+      <div class="mech reveal">
+        <div class="mech__num">03</div>
+        <div class="mech__body">
+          <h3 class="mech__title">Sunday team relay finale</h3>
+          <p>Captains draft mixed rosters of pro, amateur, junior, and women's riders across categories. Pros want to win it. Amateurs want to be drafted. Spectators love it. Always run last.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOUR ============ -->
+<section class="section section--dark" id="tour">
+  <div class="section__container">
+    <div class="section__head">
+      <div class="section__num">05</div>
+      <div class="section__label">THE TOUR</div>
+    </div>
+    <h2 class="section__title">
+      Eight lakes,<br>
+      <span class="accent accent--red">chasing the weather.</span>
+    </h2>
+    <p class="section__lede">
+      February through October. Each stop sequenced for warmth, water access, and a population center within 90 minutes.
+    </p>
+
+    <div class="tour-grid">
+      <article class="lake reveal">
+        <div class="lake__num">01</div>
+        <div class="lake__date">LATE FEB</div>
+        <div class="lake__name">Lake Fairview</div>
+        <div class="lake__loc">Orlando, FL</div>
+        <div class="lake__note">Season opener</div>
+      </article>
+      <article class="lake reveal">
+        <div class="lake__num">02</div>
+        <div class="lake__date">MID MAR</div>
+        <div class="lake__name">Lake Havasu</div>
+        <div class="lake__loc">Lake Havasu City, AZ</div>
+        <div class="lake__note">Desert flatwater</div>
+      </article>
+      <article class="lake reveal">
+        <div class="lake__num">03</div>
+        <div class="lake__date">MID APR</div>
+        <div class="lake__name">Lake Austin</div>
+        <div class="lake__loc">Austin, TX</div>
+        <div class="lake__note">Tech-outdoor crossover</div>
+      </article>
+      <article class="lake reveal">
+        <div class="lake__num">04</div>
+        <div class="lake__date">MID MAY</div>
+        <div class="lake__name">Lake Lanier</div>
+        <div class="lake__loc">Atlanta, GA</div>
+        <div class="lake__note">Spring sweet spot</div>
+      </article>
+      <article class="lake reveal">
+        <div class="lake__num">05</div>
+        <div class="lake__date">MID JUN</div>
+        <div class="lake__name">Folsom Lake</div>
+        <div class="lake__loc">Sacramento, CA</div>
+        <div class="lake__note">NorCal stop</div>
+      </article>
+      <article class="lake reveal">
+        <div class="lake__num">06</div>
+        <div class="lake__date">MID JUL</div>
+        <div class="lake__name">Geneva Lake</div>
+        <div class="lake__loc">Lake Geneva, WI</div>
+        <div class="lake__note">Midwest summer</div>
+      </article>
+      <article class="lake lake--hero reveal">
+        <div class="lake__num">07</div>
+        <div class="lake__date">EARLY AUG</div>
+        <div class="lake__name">Lake Tahoe</div>
+        <div class="lake__loc">CA / NV</div>
+        <div class="lake__note">★ HERO EVENT</div>
+      </article>
+      <article class="lake reveal">
+        <div class="lake__num">08</div>
+        <div class="lake__date">MID OCT</div>
+        <div class="lake__name">Lake Powell</div>
+        <div class="lake__loc">UT / AZ</div>
+        <div class="lake__note">Season finale</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIVISIONS ============ -->
+<section class="section section--light" id="divisions">
+  <div class="section__container">
+    <div class="section__head">
+      <div class="section__num">06</div>
+      <div class="section__label">DIVISIONS</div>
+    </div>
+    <h2 class="section__title">
+      Open across the board.<br>
+      <span class="accent">Tiered so nobody races out of their depth.</span>
+    </h2>
+
+    <div class="divisions">
+      <div class="division-col reveal">
+        <div class="division-col__head division-col__head--navy">PUMP FOIL</div>
+        <ul class="division-col__list">
+          <li>Pro</li>
+          <li>Open Amateur</li>
+          <li>Masters 40+</li>
+          <li>Junior U18</li>
+          <li>Women's</li>
+          <li>Foil Assist</li>
+          <li>First-Timer</li>
+        </ul>
+      </div>
+      <div class="division-col reveal">
+        <div class="division-col__head division-col__head--red">eFOIL</div>
+        <ul class="division-col__list">
+          <li>Pro</li>
+          <li>Open Amateur</li>
+          <li>Masters 40+</li>
+          <li>Women's</li>
+          <li>Brand Classes (opt.)</li>
+          <li>First-Timer</li>
+        </ul>
+      </div>
+      <div class="division-col reveal">
+        <div class="division-col__head division-col__head--navy">FREESTYLE</div>
+        <ul class="division-col__list">
+          <li>Pro Pump</li>
+          <li>Pro eFoil</li>
+          <li>Open Pump</li>
+          <li>Open eFoil</li>
+          <li>Women's</li>
+        </ul>
+      </div>
+    </div>
+    <p class="divisions__footer">
+      <em>16 division slots across the weekend. Most riders enter 2–3.</em>
+    </p>
+  </div>
+</section>
+
+<!-- ============ BUILD PATH ============ -->
+<section class="section section--light section--no-top" id="build">
+  <div class="section__container">
+    <div class="section__head">
+      <div class="section__num">07</div>
+      <div class="section__label">THE BUILD PATH</div>
+    </div>
+    <h2 class="section__title">
+      Earn the right<br>
+      <span class="accent">to call it a tour.</span>
+    </h2>
+
+    <div class="build-grid">
+      <article class="build-card reveal">
+        <div class="build-card__year">YEAR 0</div>
+        <h3>Pilot</h3>
+        <p>One venue, one weekend. Two disciplines if needed. Prove the format. Capture media. Build sponsor case study.</p>
+      </article>
+      <article class="build-card reveal">
+        <div class="build-card__year">YEAR 1</div>
+        <h3>Anchor</h3>
+        <p>Full four-discipline format at one venue. Lock title sponsor. Publish class rules and points formula.</p>
+      </article>
+      <article class="build-card reveal">
+        <div class="build-card__year">YEAR 2</div>
+        <h3>Mini series</h3>
+        <p>Two to three stops. Points-based season title. Year-end championship at strongest venue.</p>
+      </article>
+      <article class="build-card reveal">
+        <div class="build-card__year">YEAR 3+</div>
+        <h3>Full tour</h3>
+        <p>Eight stops. Class associations. Athlete rankings. Broadcast partner. Pursue NGB recognition.</p>
+      </article>
+    </div>
+
+    <p class="build__quote">
+      Don't announce a league. Announce one event. Run it well. Earn the rest.
+    </p>
+  </div>
+</section>
+
+<!-- ============ CTA / CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="contact__inner">
+    <div class="contact__left">
+      <div class="kicker kicker--red">LET'S TALK</div>
+      <h2 class="contact__title">
+        Eight lakes.<br>
+        One season.<br>
+        Every foil.
+      </h2>
+      <img src="assets/frl-logo.png" alt="FRL" class="contact__badge">
+    </div>
+    <div class="contact__right">
+      <h3 class="contact__sub">Sponsorship · Venue partnership · Athlete support.</h3>
+      <p class="contact__body">
+        Pilot event launching <strong>2027</strong>. Anchor sponsor slot open. We're talking with title partners across foil hardware, premium consumer brands, and lake destination tourism boards.
+      </p>
+      <div class="contact__details">
+        <a class="contact__email" href="mailto:hello@frl.example">hello@frl.example</a>
+        <span class="contact__sep">·</span>
+        <a class="contact__site" href="#top">frl.example</a>
+      </div>
+      <a class="btn btn--primary btn--large" href="mailto:hello@frl.example">Open a conversation</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <img src="assets/frl-logo.png" alt="FRL" class="footer__logo">
+    <div class="footer__col">
+      <div class="footer__head">FRL</div>
+      <p>Foil Racing League. Eight lakes. One season. Every foil.</p>
+    </div>
+    <div class="footer__col">
+      <div class="footer__head">EXPLORE</div>
+      <a href="#opportunity">Opportunity</a>
+      <a href="#tour">Tour</a>
+      <a href="#format">Format</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer__col">
+      <div class="footer__head">CONTACT</div>
+      <a href="mailto:hello@frl.example">hello@frl.example</a>
+    </div>
+    <div class="footer__bottom">
+      © 2027 Foil Racing League. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
