@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 540" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="courseDiagramTitle">
+  <title id="courseDiagramTitle">FRL 1v1 Mirrored Course Diagram</title>
+  <defs>
+    <style>
+      .course-bg { fill: #E8EEF7; }
+      .course-lane { fill: #FFFFFF; stroke: #5C6B8A; stroke-width: 1.2; stroke-dasharray: 6 4; }
+      .label { font-family: 'Manrope', system-ui, sans-serif; font-size: 13px; font-weight: 700; fill: #0A2463; letter-spacing: 0.5px; }
+      .gate-label { font-family: 'Manrope', system-ui, sans-serif; font-size: 10px; font-weight: 700; fill: #0A2463; letter-spacing: 0.5px; }
+      .apex-label { font-family: 'Manrope', system-ui, sans-serif; font-size: 11px; font-weight: 700; fill: #C8102E; }
+      .center-label { font-family: 'Manrope', system-ui, sans-serif; font-size: 11px; font-style: italic; fill: #5C6B8A; }
+      .center-label-box { fill: #FFFFFF; stroke: #5C6B8A; stroke-width: 0.8; }
+      .path-a { stroke: #0A2463; stroke-width: 3; fill: none; }
+      .path-b { stroke: #C8102E; stroke-width: 3; fill: none; }
+      .buoy-navy { fill: #0A2463; stroke: #FFFFFF; stroke-width: 2; }
+      .buoy-red { fill: #C8102E; stroke: #FFFFFF; stroke-width: 2; }
+      .gate-start { stroke: #C8102E; stroke-width: 5; stroke-linecap: round; }
+      .gate-finish { stroke: #0A2463; stroke-width: 5; stroke-linecap: round; }
+    </style>
+
+    <!-- 180° arrow marker -->
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#C8102E"/>
+    </marker>
+  </defs>
+
+  <!-- Water background -->
+  <rect class="course-bg" x="0" y="0" width="1300" height="540"/>
+
+  <!-- ============ COURSE A (left) ============ -->
+  <g transform="translate(50, 60)">
+    <text class="label" x="250" y="-15" text-anchor="middle">COURSE A   ·   3 RIGHT  →  180  →  3 LEFT</text>
+    <rect class="course-lane" x="0" y="0" width="500" height="450"/>
+
+    <!-- Race path: smoothed Y-shape going up to apex and back -->
+    <path class="path-a" d="
+      M 75 410
+      C 100 380, 140 360, 175 330
+      C 200 310, 100 280, 75 250
+      C 100 220, 175 200, 200 175
+      C 220 150, 230 130, 250 90
+      C 270 130, 280 150, 300 175
+      C 325 200, 400 220, 425 250
+      C 400 280, 300 310, 325 330
+      C 360 360, 400 380, 425 410
+    "/>
+
+    <!-- Buoys -->
+    <circle class="buoy-navy" cx="175" cy="330" r="11"/>
+    <circle class="buoy-navy" cx="75"  cy="250" r="11"/>
+    <circle class="buoy-navy" cx="200" cy="175" r="11"/>
+    <circle class="buoy-red"  cx="250" cy="90"  r="16"/> <!-- 180° apex -->
+    <circle class="buoy-navy" cx="300" cy="175" r="11"/>
+    <circle class="buoy-navy" cx="425" cy="250" r="11"/>
+    <circle class="buoy-navy" cx="325" cy="330" r="11"/>
+
+    <!-- 180 arrow + label -->
+    <path d="M 230 75 A 22 16 0 1 1 270 75" stroke="#C8102E" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+    <text class="apex-label" x="250" y="55" text-anchor="middle">180°</text>
+
+    <!-- Start / Finish gates -->
+    <line class="gate-start" x1="60" y1="410" x2="90" y2="410"/>
+    <text class="gate-label" x="75" y="435" text-anchor="middle">START</text>
+
+    <line class="gate-finish" x1="410" y1="410" x2="440" y2="410"/>
+    <text class="gate-label" x="425" y="435" text-anchor="middle">FINISH</text>
+  </g>
+
+  <!-- ============ Center divider note ============ -->
+  <g transform="translate(580, 240)">
+    <rect class="center-label-box" x="0" y="0" width="140" height="50" rx="6"/>
+    <text class="center-label" x="70" y="22" text-anchor="middle">Riders pick a side</text>
+    <text class="center-label" x="70" y="38" text-anchor="middle">(no stance bias)</text>
+  </g>
+
+  <!-- ============ COURSE B (right, mirrored) ============ -->
+  <g transform="translate(750, 60)">
+    <text class="label" x="250" y="-15" text-anchor="middle">COURSE B   ·   3 LEFT  →  180  →  3 RIGHT  (MIRRORED)</text>
+    <rect class="course-lane" x="0" y="0" width="500" height="450"/>
+
+    <!-- Mirrored race path - same shape, but path goes Right→Left effectively -->
+    <path class="path-b" d="
+      M 425 410
+      C 400 380, 360 360, 325 330
+      C 300 310, 400 280, 425 250
+      C 400 220, 325 200, 300 175
+      C 280 150, 270 130, 250 90
+      C 230 130, 220 150, 200 175
+      C 175 200, 100 220, 75 250
+      C 100 280, 200 310, 175 330
+      C 140 360, 100 380, 75 410
+    "/>
+
+    <circle class="buoy-navy" cx="325" cy="330" r="11"/>
+    <circle class="buoy-navy" cx="425" cy="250" r="11"/>
+    <circle class="buoy-navy" cx="300" cy="175" r="11"/>
+    <circle class="buoy-red"  cx="250" cy="90"  r="16"/>
+    <circle class="buoy-navy" cx="200" cy="175" r="11"/>
+    <circle class="buoy-navy" cx="75"  cy="250" r="11"/>
+    <circle class="buoy-navy" cx="175" cy="330" r="11"/>
+
+    <path d="M 230 75 A 22 16 0 1 1 270 75" stroke="#C8102E" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+    <text class="apex-label" x="250" y="55" text-anchor="middle">180°</text>
+
+    <line class="gate-start" x1="410" y1="410" x2="440" y2="410"/>
+    <text class="gate-label" x="425" y="435" text-anchor="middle">START</text>
+
+    <line class="gate-finish" x1="60" y1="410" x2="90" y2="410"/>
+    <text class="gate-label" x="75" y="435" text-anchor="middle">FINISH</text>
+  </g>
+</svg>
